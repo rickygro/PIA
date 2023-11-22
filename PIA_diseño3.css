@@ -19,8 +19,25 @@ body {
 }
 
 .content {
-    margin-left: 280px;
-    text-align: justify;
+    float: right;
+    width: 82%; /* Ajusta el ancho según tus preferencias */
+}
+
+.sound-parameters {
+    float: right;
+    margin-top: -550px;
+    width: 50%;
+}
+
+.sound-parameters th, .sound-parameters td {
+    border: 2px solid #666;
+    padding: 15px;
+    text-align: left;
+}
+
+.sound-parameters th {
+    background-color: #444;
+    color: #fff;
 }
 
 .sidebar ul {
@@ -64,22 +81,22 @@ body {
 }
 
 .content p {
-    width: 98%;
-    margin-right: 20px;
+    display: inline-block;
+    width: 45%;
+    margin-right: 5%;
     text-align: justify;
 }
 
-.content img {
+.music-image {
     max-width: 40%;
-    height: 170px;
+    height: auto;
     border-radius: 10px;
-    margin-bottom: 520px; 
+    margin-top: 20px;
     display: block;
-    margin-left: 750px;
-    margin-right: 20px;
+    margin-left: 30px;
+    margin-right: auto;
     border: 5px solid #222;
     box-shadow: 5px 5px 10px #444;
-    margin-top: -500px;
 }
 
 table {
@@ -115,7 +132,7 @@ th {
 }
 
 .content {
-    margin-left: 280px;
+    margin-left: 80px;
 }
 
 .white-mode .sidebar a {
@@ -147,6 +164,8 @@ th {
 
 .white-mode table {
     border-color: #ccc;
+    width: 100%; 
+    margin-top: 20px;
 }
 
 .white-mode th {
@@ -156,4 +175,27 @@ th {
 
 .white-mode td {
     border-color: #ddd;
+}
+
+.white-mode .content {
+    float: right;
+    width: 82%;
+}
+
+.white-mode .sound-parameters {
+    float: right;
+    margin-top: -550px; 
+    width: 50%;
+}
+
+.white-mode .music-image {
+    max-width: 40%; 
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+    display: block;
+    margin-left: 30px;
+    margin-right: auto;
+    border: 5px solid #ddd;
+    box-shadow: 5px 5px 10px #bbb;
 }

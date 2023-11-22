@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <title>Parámetros</title>
-    <link rel="stylesheet" type="text/css" href="PIA_diseño.css">
+    <link rel="stylesheet" type="text/css" href="PIA_diseño3.css">
 </head>
 <body>
     <div class="sidebar">
@@ -17,8 +17,41 @@
         <button id="color-change-button" class="button-dark">Cambiar Color</button>
     </div>
     <div class="content">
-        <h1>Parámetros</h1>
-        <p>En esta sección, exploraremos los diferentes parámetros y aspectos clave de la música. Aprenderemos sobre las características que definen la música y cómo se utilizan en la composición y el análisis musical.</p>
+        <h1>Parámetros del Sonido</h1>
+        <p>En esta sección, exploraremos los parámetros fundamentales del sonido, comprendiendo su definición y las características matemáticas que los describen.</p>
+
+        <h2>Definición de Sonido</h2>
+        <p>El sonido es una vibración que se propaga a través de un medio, ya sea gas, líquido o sólido. Esta vibración produce ondas que nuestro oído percibe como sonido. La velocidad del sonido varía según el medio a través del cual se propaga.</p>
+        <p>La percepción del sonido involucra la frecuencia, amplitud, duración e intensidad de estas vibraciones, dando lugar a la experiencia auditiva que conocemos como música.</p>
+
+        <img class="music-image" src="images/musica.jpg" alt="Imagen de música">
+        <table class="sound-parameters">
+            <tr>
+                <th>Parámetro</th>
+                <th>Definición</th>
+                <th>Aspectos Matemáticos</th>
+            </tr>
+            <tr>
+                <td>Altura</td>
+                <td>La altura se relaciona con la frecuencia del sonido. Los sonidos graves tienen bajas frecuencias, mientras que los agudos tienen frecuencias altas.</td>
+                <td>Altura (Hz) = 1 / Periodo (segundos)<br>Longitud de onda (m) = Velocidad del sonido (m/s) / Frecuencia (Hz)</td>
+            </tr>
+            <tr>
+                <td>Duración</td>
+                <td>La duración se refiere al tiempo que dura un sonido. En la música, está vinculada al ritmo y a cómo se organizan las notas en el tiempo.</td>
+                <td>Relación con la notación musical y la organización temporal de las notas y silencios.</td>
+            </tr>
+            <tr>
+                <td>Intensidad</td>
+                <td>La intensidad se relaciona con la amplitud de las ondas sonoras. Es responsable de la percepción de volumen, siendo sonidos más intensos más fuertes.</td>
+                <td>Intensidad (W/m²) = Energía (Joules) / Área (m²)</td>
+            </tr>
+            <tr>
+                <td>Timbre</td>
+                <td>El timbre es la calidad tonal única que permite distinguir diferentes instrumentos o voces. Se relaciona con la forma del espectro de frecuencias.</td>
+                <td>Descomposición espectral utilizando transformadas de Fourier y análisis armónico.</td>
+            </tr>
+        </table>
     </div>
     <script src="PIA_script.js"></script>
 </body>
