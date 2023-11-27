@@ -1,4 +1,4 @@
-/* Modo Oscuro */
+/* Estilos generales */
 body.transitioning {
     transition: background-color 1s, color 1s, opacity 1s;
 }
@@ -7,6 +7,7 @@ body {
     background-color: #111;
     color: white;
     font-family: Arial, sans-serif;
+    overflow-x: hidden; /* Oculta la barra de desplazamiento horizontal */
 }
 
 .sidebar {
@@ -69,49 +70,41 @@ body {
 
 .content p {
     display: inline-block;
-    width: 45%;
+    width: 100%;
     margin-right: 5%;
     text-align: justify;
 }
 
-.content img {
-    max-width: 40%;
-    height: 170px;
+/* Imágenes de los artistas */
+.artist-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.artist {
+    flex: 0 1 calc(30% - 20px);
+    background-color: #333;
     border-radius: 10px;
-    margin-bottom: 520px; 
-    display: block;
-    margin-left: 750px;
-    margin-right: 20px;
-    border: 5px solid #222;
-    box-shadow: 5px 5px 10px #444;
-    margin-top: -500px;
+    overflow: hidden;
+    margin-bottom: 20px; /* Espaciado inferior entre artistas */
 }
 
-table {
-    border-collapse: collapse;
+.artist img {
     width: 100%;
-    margin-top: 20px;
+    height: auto;
+    border-radius: 10px; /* Mejora en el borde de las imágenes */
 }
 
-th, td {
-    border: 2px solid #666;
-    padding: 15px;
-    text-align: left;
-}
-
-th {
-    background-color: #444;
-    color: #fff;
-}
-
-.transitioning {
-    transition: background-color 1s, color 1s; 
+.artist h2, .artist p {
+    padding: 10px;
+    margin: 0;
 }
 
 /* Modo Claro */
 .white-mode {
     background-color: #f4f1ea;
-    color: #444;
+    color: #a19c9c; /* Se reduce el color para mejorar la legibilidad */
 }
 
 .white-mode .sidebar {
@@ -119,7 +112,7 @@ th {
     border: 5px solid #2980b9;
 }
 
-.content {
+.white-mode .content {
     margin-left: 280px;
 }
 
@@ -133,12 +126,12 @@ th {
 }
 
 .white-mode #color-change-button {
-    background-color: #205d87; 
+    background-color: #205d87;
     color: #fff;
 }
 
 .white-mode #color-change-button:hover {
-    background-color: #17415e; 
+    background-color: #17415e;
 }
 
 .white-mode .button-dark {
@@ -148,17 +141,4 @@ th {
 
 .white-mode .button-dark:hover {
     background-color: #c0392b;
-}
-
-.white-mode table {
-    border-color: #ccc;
-}
-
-.white-mode th {
-    background-color: #ddd;
-    color: #333;
-}
-
-.white-mode td {
-    border-color: #ddd;
 }

@@ -1,4 +1,8 @@
 /* Modo Oscuro */
+body.transitioning {
+    transition: background-color 1s, color 1s, opacity 1s;
+}
+
 body {
     background-color: #111;
     color: white;
